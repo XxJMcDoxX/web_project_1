@@ -7,12 +7,14 @@
   margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: turquoise;
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color: thistle;
   /* parameters for the header section */
 }
 
@@ -20,6 +22,7 @@
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: yellow;
 }
 
 /* including elements with key-value modifiers */
@@ -28,4 +31,36 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.logo__place__header{
+  position: absolute;
+  z-index: 1;
+  height: 31px;
+  width: 154px;
+  bottom: 30px;
+  right:54px;
+  background-color: tomato;
+}
+
+.header__title{
+display: flex;
+  width: 730px;
+ right:64px;
+background-color: violet;
+}
+
+.header__subtitle{
+  position: absolute;
+  width: 386px;
+  top: 30px;
+  right: 64px;
+  background-color: teal;
+}
+
+.header__link{
+position: absolute;
+top: 0;
+width: 10px;
+background-color: yellowgreen;
 }
