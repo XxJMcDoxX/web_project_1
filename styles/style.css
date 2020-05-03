@@ -20,9 +20,13 @@
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
+  position: absolute;
   height: 568px;
   width: 568px;
   background-color: yellow;
+  left: 689px;
+top: 100px;
+opacity: .3;
 }
 
 /* including elements with key-value modifiers */
@@ -33,7 +37,7 @@
   margin-top: 80px;
 }
 
-.logo__place__header{
+.logo__place__header{  /* 1*/
   position: absolute;
   z-index: 1;
   height: 31px;
@@ -43,30 +47,35 @@
   background-color: tomato;
 }
 
-.header__title{
+.header__title{   /* 2*/
 display: flex;
-  width: 730px;
- left:64px;
+position: relative;
+width: 730px;
+margin-left: 2px;
+margin-top: 2em;
+ left:24px;
 background-color: violet;
-}
-
-.header__title__text{
-  line-height: 96px;
+line-height: 96px;
   font-size: 102px;
   font-weight: bold;
 }
 
-.header__subtitle{
+
+
+.header__subtitle{    /* 3*/
   position: absolute;
   width: 386px;
-  top: 30px;
-  right: 64px;
+  left: 10px;
+top: 700px;
   background-color: teal;
 }
 
-.header__link{
+.header__link{/* 4*/
 position: absolute;
-top: 0;
-width: 10px;
-background-color: yellowgreen;
+bottom: -24px;
+right:200px;
+width:608px;
+height: 756;
 }
+
+
