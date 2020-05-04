@@ -4,30 +4,22 @@
   /* so here we've set a minimum page width */
   max-width: 1600px;
   /* here we've set a maximum page width */
-  margin: 0 auto;
+  margin: 0 auto ;
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: turquoise;
+
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  background-color: thistle;
+/* background-color: burlywood; */
+
   /* parameters for the header section */
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__square-pic {
-  position: absolute;
-  height: 568px;
-  width: 568px;
-  background-color: yellow;
-  left: 689px;
-top: 100px;
-opacity: .3;
-}
 
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
@@ -43,19 +35,19 @@ opacity: .3;
   height: 31px;
   width: 154px;
   top: 30px;
-  left:54px;
-  background-color: tomato;
+  left:64px;
+
 }
 
 .header__title{   /* 2*/
-display: flex;
-position: relative;
-width: 730px;
-margin-left: 2px;
-margin-top: 2em;
- left:24px;
-background-color: violet;
-line-height: 96px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 730px;
+  top: 315px;
+  left:64px;
+  line-height: 96px;
   font-size: 102px;
   font-weight: bold;
 }
@@ -63,19 +55,38 @@ line-height: 96px;
 
 
 .header__subtitle{    /* 3*/
-  position: absolute;
-  width: 386px;
-  left: 10px;
-top: 700px;
-  background-color: teal;
+ position: absolute;
+ z-index: 1;
+ width: 388px;
+ left: 64px;
+ bottom: 30px;
+ line-height: 25px;
+ font-size: 18px;
+ font-weight: normal;
+ color: rgb(10, 7, 10);
 }
 
 .header__link{/* 4*/
-position: absolute;
-bottom: -24px;
-right:200px;
-width:608px;
-height: 756;
+color: blue;
+  }
+
+.header__main-illustration{ /*5*/
+  position: absolute;
+  z-index: 0;
+  bottom:0px;
+  right:80px;
+  top: 0px;
+  width:756px;
+  height: 608px;
 }
 
+.header__square-pic { /*6*/
+  position:  absolute;
+  z-index: -1;
+  height: 569px;
+  width: 568px;
+  background-color: rgb(6, 153, 252);
+  left: 750px;
+  top: 24px;
+}
 
