@@ -90,3 +90,45 @@ color: blue;
   top: 24px;
 }
 
+.content{
+  height: 20em;
+  width: 50em;
+}
+
+.two-columns__brief{
+  display: flex;
+  width: ;
+}
+
+.two-columns__main-text{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.two-columns__paragraph{
+  display: flex;
+}
+
+.two-columns__span-accent{
+  display: flex;
+}
+
+
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1;
+  }
+}
