@@ -91,47 +91,46 @@ color: blue;
 }
 
 .content{
-  position: ;
+  display: flex ;
+
+
   height: 20em;
   width: 50em;
+  background-color: darkkhaki;
 }
 
 .two-columns__brief{
   display: flex;
+  flex-flow: column wrap;
   width:20px ;
   background-color: cyan;
+
 }
 
 .two-columns__main-text{
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
   align-self: center;
+  background-color: dimgrey;
 
 }
 
 .two-columns__paragraph{
   display: flex;
+  flex-flow: column wrap;
+  background-color: fuchsia;
 }
 
 .two-columns__span-accent{
   display: flex;
+  flex-flow: column wrap;
+  background-color: greenyellow;
 }
 
 
 
 
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 
-.column {
-  flex-basis: 100%;
-}
 
-@media screen and (min-width: 800px) {
-  .column {
-    flex: 1;
-  }
-}
+
