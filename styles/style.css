@@ -139,7 +139,7 @@ text-decoration: none;
   margin-bottom: 30px;
   margin-top: 0;
   font-weight: normal;
-  display: flex;
+
   background-color: rgb(253, 186, 186);
 }
 
@@ -152,7 +152,7 @@ text-decoration: none;
 
 
 .digits{
-justify-content: center;
+margin: 100px;
 
 }
 
@@ -182,7 +182,4 @@ background-color: lightblue;
  width: 250px;
  background-color: lightsalmon;
 }
-
-.
-
 
