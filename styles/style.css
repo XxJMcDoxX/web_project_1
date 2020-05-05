@@ -11,11 +11,13 @@
 }
 
 .header {
+  background-color:   #f2f2f2;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-background-color: burlywood;
+/* background-color: burlywood; */
 display: flex;
+position: relative;
   /* parameters for the header section */
 }
 
@@ -41,6 +43,7 @@ display: flex;
 
 .header__title{   /* 2*/
   position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -50,6 +53,7 @@ display: flex;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
+
 }
 
 
@@ -67,65 +71,82 @@ display: flex;
 }
 
 .header__link{/* 4*/
-color: blue;
+color:  #2f80ed;
+text-decoration: none;
   }
 
 .header__main-illustration{ /*5*/
   position: absolute;
-  z-index: 0;
-  bottom:0px;
-  right:80px;
-  top:-100px;
-  width:756px;
+  z-index: 1;
+  bottom: 0px;
+  right: 0px;
+  /* top:100px; */
+  width: 756px;
   height: 608px;
+
 }
 
 .header__square-pic { /*6*/
   position:  absolute;
-  z-index: -1;
+  z-index: 0;
   height: 569px;
   width: 568px;
   background-color: rgb(6, 153, 252);
   left: 750px;
-  top: 24px;
+  top: 64px;
 }
 
-.content{
-  display: flex ;
+.description{
+  display: flex;
 
+  justify-content: center;
+  align-self: center;
 
-  height: 20em;
-  width: 50em;
-  background-color: darkkhaki;
+  padding: 120px  100px;
+  background-color: rgb(251, 244, 145);
+}
+
+.two-columns{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: left;
 }
 
 .two-columns__brief{
-  display: flex;
-  flex-flow: column wrap;
-  width:20px ;
+  color:  #2f80ed;
+  text-decoration: none;
+  width:175px ;
   background-color: cyan;
-
+  line-height: 1.2;
+  font-size: 18px;
 }
 
 .two-columns__main-text{
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-self: center;
-  background-color: dimgrey;
+  line-height: 1.2;
 
+  font-size: 18px;
+  font-style: normal;
+  width: 80%;
+  min-width: 784px;
+  background-color: rgb(149, 146, 146);
+  padding: 0px;
 }
 
 .two-columns__paragraph{
+  line-height: 24px;
+  line-break: 30px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  font-weight: normal;
   display: flex;
-  flex-flow: column wrap;
-  background-color: fuchsia;
+  background-color: rgb(253, 186, 186);
 }
 
 .two-columns__span-accent{
-  display: flex;
-  flex-flow: column wrap;
+  line-height: 12px;
   background-color: greenyellow;
+  font-weight: bold;
 }
 
 
